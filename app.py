@@ -1,7 +1,7 @@
 import tensorflow as tf
 import pickle
 
-model = tf.keras.models.load_model("/home/conqueror/college dl/spam_classifier/rnn/next_word.predictor.keras")
+model = tf.keras.models.load_model("next_word.predictor.keras")
 
 with open("tokenizer.pkl","rb") as f:
     tokenizer = pickle.load(f)
